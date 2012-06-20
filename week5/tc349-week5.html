@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="../../Downloads/Tabs-Pills-BEGIN/css/style.css" rel="stylesheet">
+    
+    <style>
+    	/* To keep short panes open decently tall */
+    	.tab-pane {min-height: 400px;}
+    </style>
+
+<!-- Modernizr for browser feature-checking 
+			+ HTML5shiv (included in modernizr) see modernizr.com -->
+  	<script src="modernizr-2.5.3.min.js"></script>
+
+<!-- Fav and touch icons -->
+		<!-- alternatively, remove these lines and place icons
+				directly in the site parent folder 
+				mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="../../Downloads/Tabs-Pills-BEGIN/img/favicon.ico">
+    <link rel="apple-touch-icon" href="../../Downloads/Tabs-Pills-BEGIN/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../Downloads/Tabs-Pills-BEGIN/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../Downloads/Tabs-Pills-BEGIN/img/apple-touch-icon-114x114.png">
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container">
+		      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </a>
+		      <a class="brand" href="../../Downloads/Tabs-Pills-BEGIN/index.html">To Do List</a>
+		      <div class="nav-collapse">
+		        <ul class="nav">
+		          <li class="active"><a href="#">TDL</a></li>
+		          <li><a href="#">Contact</a></li>
+		          <li><a href="#">About</a></li>
+		        </ul>
+		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/"><b class="icon-home icon-white"></b>Home</a>
+		      </div><!-- /.nav-collapse -->
+		    </div><!-- /.container -->
+		  </div><!-- /navbar-inner -->
+		</div><!-- /navbar -->
+		
+		<div class="container">
+		    <div class="page-header">
+			    <h1>To Do List</h1>
+		    </div>
+		    
+		    		<div class="row">
+							<div class="tabbable span12">
+								<ul class="nav nav-pills nav-stacked span2">
+									<li class="active"><a href="#tabs1-pane1" data-toggle="tab">Sunday</a></li>
+									<li><a href="#tabs1-pane2" data-toggle="tab">Monday</a></li>
+									<li><a href="#tabs1-pane3" data-toggle="tab">Tuesday</a></li>
+                                    <li><a href="#tabs1-pane4" data-toggle="tab">Wednesday</a></li>
+                                    <li><a href="#tabs1-pane5" data-toggle="tab">Thursday</a></li>
+                                    <li><a href="#tabs1-pane6" data-toggle="tab">Friday</a></li>
+                                    <li><a href="#tabs1-pane7" data-toggle="tab">Saturday</a></li>
+								</ul>
+								<div class="tab-content span8">
+									<div class="tab-pane active" id="tabs1-pane1">
+										<h4>Sunday</h4>
+										<ul>
+                                        	<li>10:00am - Meet Cliff at the park</li>
+                                            <li>1:00pm - Lunch with Mom</li>
+                                            <li>3:00pm - Golf with Andrew</li>
+                                            <li>6:00 - Grocery shopping</li>
+                                        </ul>
+									</div>
+									<div class="tab-pane" id="tabs1-pane2">
+										<h4>Monday</h4>
+										<ul>
+                                        	<li>9:00am - Work</li>
+                                            <li>12:30pm - Lunch with Mom</li>
+                                            <li>7:00pm - Pink Floyd concert</li>
+                                        </ul>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane3">
+										<h4>Tuesday</h4>
+										<ul>
+                                        	<li>9:00am - Work</li>
+                                            <li>6:00pm - Car show</li>
+                                        </ul>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane4">
+										<h4>Wednesday</h4>
+										<ul>
+                                        	<li>9:00am - Golf</li>
+                                            <li>1:00pm - Work</li>
+                                            <li>6:00pm - Class</li>
+                                            <li>8:00 - Homework</li>
+                                        </ul>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane5">
+										<h4>Thursday</h4>
+										<ul>
+                                        	<li>9:00am - Work</li>
+                                            <li>1:00pm - Class</li>
+                                            <li>6:00 - Homework</li>
+                                        </ul>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane6">
+										<h4>Friday</h4>
+										<ul>
+                                        	<li>9:00am - Workk</li>
+                                            <li>4:00pm - Class</li>
+                                            <li>8:00pm - Game of Thrones marathon</li>
+                                       </ul>
+									</div>
+                                    <div class="tab-pane" id="tabs1-pane7">
+										<h4>Sunday</h4>
+										<ul>
+                                        	<li>10:00am - Kelseys birthday</li>
+                                            <li>4:00pm - Dinner with Christina</li>
+                                            <li>6:00 - Bar with Kelsey</li>
+                                        </ul>
+									</div>
+								</div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.row -->
+
+      <hr>
+
+      <footer>
+        <p>Ryan Tice's To Do List TC349 Project</p>
+      </footer>
+
+
+    </div> <!-- .container -->
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS: compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!-- Example plugin: Prettify -->
+    <script src="js/prettify/prettify.js"></script>
+    
+<!-- Initialize Scripts -->
+		<script>
+			// Activate Google Prettify in this page
+			addEventListener('load', prettyPrint, false);
+		
+			$(document).ready(function(){
+
+				// Add prettyprint class to pre elements
+					$('pre').addClass('prettyprint');
+								
+			}); // end document.ready
+		</script>
+
+  </body>
+</html>
